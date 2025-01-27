@@ -22,7 +22,7 @@ include(FetchContent)
 if (VulkanHeaderVersion GREATER_EQUAL 275)
   FetchContent_Declare(glslang
       GIT_REPOSITORY https://github.com/KhronosGroup/glslang
-      GIT_TAG vulkan-sdk-1.3.${VulkanHeaderVersion}.0)
+      GIT_TAG vulkan-sdk-1.4.${VulkanHeaderVersion}.0)
   if (NOT glslang_POPULATED)
     set(ENABLE_OPT OFF)
   endif()
